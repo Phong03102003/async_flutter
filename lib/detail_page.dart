@@ -85,9 +85,6 @@ class _DetailPageState extends State<DetailPage> {
     } catch (e) {
       // ignore: avoid_print
       print('Error loading article content: $e');
-      setState(() {
-        articleContent = 'Lỗi khi tải nội dung bài viết!';
-      });
     }
   }
 
@@ -121,8 +118,7 @@ class _DetailPageState extends State<DetailPage> {
         centerTitle: true,
         actions: [
           IconButton(
-            icon:
-                Icon(isLiked ? Icons.download : Icons.download_rounded),
+            icon: Icon(isLiked ? Icons.download : Icons.download_rounded),
             onPressed: _toggleLike,
           ),
           IconButton(
