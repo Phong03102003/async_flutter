@@ -150,7 +150,8 @@ class _DetailPageState extends State<DetailPage> {
             ),
             SingleChildScrollView(
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 0.0, horizontal: 16.0),
                 child: Text(
                   articleContent ?? 'Loading...',
                   style: const TextStyle(fontSize: 16.0),

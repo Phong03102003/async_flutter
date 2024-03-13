@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _getArticles() async {
     const url =
-        'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=65247db2e60541e0887a3251b6cf13c8';
+        'https://newsapi.org/v2/everything?q=apple&from=2024-03-12&to=2024-03-12&sortBy=popularity&apiKey=65247db2e60541e0887a3251b6cf13c8';
     final res = await http.get(Uri.parse(url));
     final body = json.decode(res.body) as Map<String, dynamic>;
 
